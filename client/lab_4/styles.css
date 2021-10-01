@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 .header {
     background-color: #D6E9FE;
     height: 20px;
@@ -23,15 +17,14 @@
     border: 1px solid #fff;
     background-color: #D6E9FE;
     height: 20px;
-    flex: 1;
     font-weight: bold;
+    width: 1000px;
   }
 
 .footer-one,
 .footer-three {
     background-color: #5995DA;
-    flex: initial;
-    width: 300px;
+    width: 400px;
   }
 
 .carousel {
@@ -53,24 +46,29 @@
 }
 .carousel .carousel_actions {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%)
+    align-items: center;
 }
 .carousel_actions button {
     border-radius: 5px;
-    padding: 0.25em;
-    font-weight: bold;
+    padding: .25em;
+    font-weight: bolder;
+    font-size: large;
     cursor: pointer;
     width: 60px;
     height: 30px;
-    margin-bottom: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 .carousel_actions button#carousel_button--prev {
     margin-left: 40px;
+    margin-top: 140px;
 }
 .carousel_actions button#carousel_button--next {
     margin-right: 40px;
+    margin-top: 140px;
+}
+
+.photo-grid-container .carousel_actions button:focus {
+    border-color: greenyellow;
+    background-color: orange;
 }
