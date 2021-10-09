@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Casey Tabatabai Lab 5: HTML Forms</title>
+        <link rel='stylesheet' href='styles.css'/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='container'>
+                <div class= 'column is-full'><div class='box title has-background-info'>Casey Tabatabai's Lab 5</div></div>
+                <div class='columns is-vcentered is-centered'>
+                    <div class='column is-2'>
+                        <form action='/api' method='get' class='body'>
+                            <div class='box has-background-warning'>
+                                <div class='field'>
+                                    <label class='label' for='first-name'>First Name</label>
+                                    <div class="control">
+                                        <input id='first-name' name='first-name' type='text'/>
+                                    </div>
+                                </div>
+
+                                <div class='field'>
+                                    <label class='label' for='food-preference'>Food Preference</label>
+                                    <div class="control">
+                                        <input id='food-preference' name='food-preference' type='text'/>
+                                    </div>
+                                </div>
+
+                                <div class='field'>
+                                    <legend><b>Veggie or Vegan?</b></legend>
+                                    <label for='food-type-1' class='radio-label'>Yes</label>
+                                    <input id='food-type-1' name='food-type' type='radio' value='Yes'/>
+                                    <label for='food-type-2' class='radio-label'>No</label>
+                                    <input id='food-type-2' name='food-type' type='radio' value="No"/>
+                                </div>
+
+                                <div class='control'>
+                                    <input class='button is-success' type='submit' value='Submit'>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                <div class='column is-half'>
+                    <div class='box has-background-danger'>
+                        This is going to be something in two weeks.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
